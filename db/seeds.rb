@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-puts "create category"
+ puts "create category"
 Category.create(name: 'Deportes')
 Category.create(name: 'Farándula')
 Category.create(name: 'Nacional')
@@ -14,6 +14,6 @@ Category.create(name: 'Internacional')
 Category.create(name: 'Política')
 
 puts "create newspaper"
-Newspaper.create(header: 'Flamengo campeón', body: 'Flamengo campeón de la copa libertadores', link:"https://www.conmebol.com/noticias/por-la-gloria-eterna-paranaense-y-flamengo-jugaran-la-final-de-conmebol-libertadores/" category: Category.id(1))
-Newspaper.create(header: 'Flamengo campeón', body: 'Flamengo campeón de la copa libertadores', link:"https://www.conmebol.com/noticias/por-la-gloria-eterna-paranaense-y-flamengo-jugaran-la-final-de-conmebol-libertadores/" category: Category.id(3))
-Newspaper.create(header: 'Flamengo campeón', body: 'Flamengo campeón de la copa libertadores', link:"https://www.conmebol.com/noticias/por-la-gloria-eterna-paranaense-y-flamengo-jugaran-la-final-de-conmebol-libertadores/" category: Category.id(4))
+Newspaper.create(header: 'Flamengo campeón', body: 'Flamengo campeón de la copa libertadores', link:"https://www.conmebol.com/noticias/por-la-gloria-eterna-paranaense-y-flamengo-jugaran-la-final-de-conmebol-libertadores/", category: Category.find(1))
+Newspaper.create(header: 'Flamengo campeón', body: 'Flamengo campeón de la copa libertadores', link:"https://www.conmebol.com/noticias/por-la-gloria-eterna-paranaense-y-flamengo-jugaran-la-final-de-conmebol-libertadores/", category: Category.find(3))
+Newspaper.create(header: 'Flamengo campeón', body: 'Flamengo campeón de la copa libertadores', link:"https://www.conmebol.com/noticias/por-la-gloria-eterna-paranaense-y-flamengo-jugaran-la-final-de-conmebol-libertadores/", category: Category.find(4))
