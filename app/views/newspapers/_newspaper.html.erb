@@ -1,5 +1,14 @@
 <div id="<%= dom_id newspaper %>">
-  <p>
+  <div class="card" style="width: 18rem;">
+  <img src="https://previews.123rf.com/images/destinacigdem/destinacigdem1503/destinacigdem150300020/37392110-concepto-de-noticias-global-con-globo-y-peri%C3%B3dico-gen%C3%A9rico.jpg?fj=1" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"></strong><%= newspaper.header %></h5>
+    <p class="card-text"><strong>
+    <%= newspaper.body %>. Esta noticia fue subida por un colaborador.</strong> </p>
+    <a href=<%= newspaper.link %> target="_blank" class="btn btn-primary"> Leer más</a>
+  </div>
+</div>
+  <!--<p>
     <strong>Header:</strong>
     <%= newspaper.header %>
   </p>
@@ -15,7 +24,7 @@
 
     
   </p>
-
+  -->
   <p>
     <strong>Category:</strong>
     <%= newspaper.category.name %>
