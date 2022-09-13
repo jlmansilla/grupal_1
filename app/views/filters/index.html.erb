@@ -4,14 +4,11 @@
 
 <div id="newspapers">
   <% @newspapers.each do |newspaper| %>
-
     <%= render newspaper %>
     <p>
       <%= link_to "Show this newspaper", newspaper %>
       
     </p>
-    <p><%= link_to "Filtrar por categoria", filters_index_path(q: newspaper.category_id) %></p>
-
     
 
   <% end %>

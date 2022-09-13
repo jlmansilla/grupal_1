@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'filters/index'
   resources :newspapers
   resources :categories
   root 'newspapers#portada'

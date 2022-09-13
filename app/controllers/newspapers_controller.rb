@@ -14,7 +14,8 @@ class NewspapersController < ApplicationController
   def new
     @newspaper = Newspaper.new
   end
-
+ 
+  
   # GET /newspapers/1/edit
   def edit
   end
